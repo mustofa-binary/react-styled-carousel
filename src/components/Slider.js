@@ -153,6 +153,7 @@ class Slider extends React.Component {
       dots.push(React.cloneElement(Dot, {
         active: index === this.state.initialCard,
         key: index,
+        index,
         onClick: () => this.changeInitialCard(index),
       }));
     }
